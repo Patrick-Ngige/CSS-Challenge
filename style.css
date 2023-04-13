@@ -1,37 +1,45 @@
 *{
     padding: 0 ;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    
-    
+    font-family: 'Montserrat', sans-serif;    
 }
 body{
     overflow-x: hidden;
 }
+
+/* NAVIGATION AREA */
+
 .nav{
     width: 100%;
     height: 110vh;
     background-image: url("./images/hero-cover.png");
     background-size: cover;
     background-repeat: none;
-    
 }
 .nav-items{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 30px;
+    padding: 2rem;
+}
+#logo{
+    font-size: 1.5em;
+    margin-top: -.3em;
+    font-weight: 600;
 }
 .links{
     display: flex;
     justify-content: flex-start; 
     gap: 30px;
     flex-direction: row;
+    padding-left: 9em;
+    padding-top: .8em;
 }
 .join{
     display: flex;
-    gap: 10px;
+    gap: 2rem;
     align-items: center;
+    padding-right: 9em;
 }
 .links a, .join a{
     text-decoration: none;
@@ -39,10 +47,10 @@ body{
 }
 #join-btn{
    width: 11rem;
-   background-color: #1D99CA;
+   background-color: rgb(35, 166, 240);
    border: none;
-   padding: 10px;
-   border-radius: 10px;
+   padding: .7rem;
+   border-radius: 5px;
 }
 ion-icon {
     color: white;
@@ -57,36 +65,37 @@ ion-icon {
     display: flex;
     justify-content: center;
     font-size: 4rem;
-    letter-spacing: px;
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 .nav-title p{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 20px;
+    text-align: center;
+    margin-top: .4rem;
+    font-size: 1.2rem;
     color: #ffffff;
 }
 .btn {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 30px ;
+    margin-top: 3rem ;
 }
 .btn button{
-    padding: 15px 50px;
-    border-radius: 40px;
-    font-size: 15px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
     cursor: pointer;
+    
 }
-.btn1{
-    background-color: #1D99CA;
+.btn button:hover{
+    background-color: rgb(35, 166, 240);
     color: #ffffff;
     border: none;
 }
-.btn2{
+
+.btn1 , .btn2{
     color: #ffffff;
     background: transparent;
     opacity: .8;
@@ -94,46 +103,10 @@ ion-icon {
 }
 
 .box{
-    background-color: aliceblue;
+    background-color: #ffffff;
 
 }
 
-/* The first floating section */
-.floats{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    gap: 4rem;
-    padding-top: -80px;
-    cursor: pointer;
-} 
- .floats ion-icon {
-    font-size: 50px;
-    color: #1D99CA; 
-}
- .float3 ion-icon {
-    color: #ffffff;
-}
-.float1, .float2, .float3{
-    width: 16rem;
-    padding: 30px;
-    font-size: 25px;
-    border: none;
-    background-color: white;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-.floats p{
-    font-size: 15px;
-    padding: 10px;
-    opacity: .5;
-    /* text-align: center; */
-}
-.floats span{
-    width: 10rem;
-}
 
 
 /* The second floating section */
@@ -268,14 +241,1009 @@ ion-icon {
     border: 1px solid black;
     padding: 2rem;
     gap: 2rem;
-    /* margin-left: 16rem; */
+    background-image: linear-gradient(to right, hsl(210, 92%, 28%), hsl(323, 82%, 45%));
+}
+.Newsletter h3{
+    color: #ffffff;
 }
 .Newsletter button{
-    padding: 1rem;
-    width: 20rem;
-    font-size: 1rem;
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: .8rem;
+    border: 2px solid white;
+    background-color: white;
+    gap: 10px;
+    border-radius: 5px;
 }
-.Newsletter input{
-    padding: 5px;
-    margin-right: 1rem;
+   
+#email{
+    width:15em;   
+}
+#email input{
+    padding: 15px 0px 15px 15px;
+    border: none;
+}
+#submit{
+    width: 5em;
+    background-color: rgb(35, 166, 240);
+    border-radius: 2px;
+    border: none;
+    padding: 8px 0 8px 0px;
+    border: none;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* PRICING */
+
+.Pricing{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;   
+    cursor: pointer;
+}
+.pricing-info {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing-info h1{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+.pricing-info p{
+    opacity: .6;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.rating{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5em;
+}
+
+/* OFFERS */
+.offers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.price-offers{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+.offer1 h3, .offer2 h3, .offer3 h3{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.offer1 p, .offer2 p, .offer3 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px; 
+    font-weight: 600;
+    color: rgb(123, 123, 123);
+}
+.currency p{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    color: rgb(35, 166, 240) ;
+}
+.offer1:hover, .offer2:hover, .offer3:hover{
+    background-color: rgb(37, 43, 66);
+    color: hsl(0, 0%, 100%);
+    margin-top: -1em;
+}
+.offer1, .offer2, .offer3{
+    width: 25%;
+    border: 1px solid rgb(35, 166, 240);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.offer-cut{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: rgb(35, 166, 240) ;
+    gap: .5em;
+    padding-top: 2em;
+    margin-bottom: 2rem;
+}
+#price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+#currency{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#currency span{
+    font-size: 12px;
+    font-weight:100 ;
+}
+#list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#list ul{
+    margin-bottom: .8rem;
+    color: rgb(63, 63, 63);
+}
+#list ol{
+    font-size: 13px;
+    padding: .2em;
+    
+}
+#list ion-icon {
+    color: rgb(0, 181, 24);
+    font-size: 1.5em;
+    margin-bottom: -.3em;
+    padding: .19rem;
+  }
+.offers button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(35, 166, 240);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/* BRANCH */
+.branches{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-color: #053547;
+    color: #e3e3e3;
+}
+.branch-map{
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12em;
+    padding: 3em;
+}
+#branch-info{
+    width: 50%;
+}
+#branch-info h1{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: .6em;
+}
+#branch-info p{
+    font-size: 12px;
+}
+#branch-img{
+    width: 50%;
+}
+#branch-img img{
+    width: 30vw;
+}
+
+/* CONTACT */
+.contact{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -14em;
+}
+.contact-form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+#form{
+    width: 55%;
+    padding: 5em ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .8em;
+}
+#form h3{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+#form input{
+    width: 65vh;
+    padding: .8em;
+    margin: .8em 0 0.8em 0;
+    border-radius: 3px;
+    border: 1px solid rgb(199, 199, 199);
+}
+#form button{
+    width: 69vh;
+    padding: .8em;
+    margin: .8em 0 0.8em 0;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(70, 148, 244);
+    color: #ffffff;
+}
+.contact-form img{
+    width: 25vw;
+}
+
+/* CONSULTING-AGENCY */
+.consulting-agency{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #e3e3e3;
+    margin-top: 5em;
+}
+.agency{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10em;
+}
+#agency-info{
+    padding: 12em;
+    color: rgb(31, 31, 31);
+}
+#agency-info h1{
+    font-size: 20px;
+}
+#agency-info p{
+    font-size: 12px;
+    padding: .3em;
+}
+#agency-btn button{
+    width: 25vh;
+    padding: .8em;
+    background-color: rgb(35, 166, 240);
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2em 0 1em 0; 
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5em;
+}
+.co-info, .legal, .features, .resources, .get-in-touch{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.co-info a, .legal a, .features a, .resources a, .get-in-touch a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-size: 12px;
+    padding: .5em 0 .5em 0;
+}
+.footer-container h3{
+    font-size: 14px;
+    margin-bottom: .3em;
+}
+.rights{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    margin-top: 1em;
+}
+.rights-stmt{
+    font-size: 12px;
+}
+
+
+/* MEDIA QUERIES
+    MEDIA QUERIES
+        MEDIA QUERIES
+            MEDIA QUERIES
+                MEDIA QUERIES */
+
+@media (max-width: 768px) {
+*{
+    overflow-x: hidden;
+}
+.nav{
+    height: 60vh;
+    background-size: cover;
+}
+.nav-items{
+    justify-content: center ;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}
+#logo{
+    font-size: 1em;
+    margin-top: -.1em;
+}
+.links{
+    display: flex;
+    justify-content: center; 
+    gap: 1em;
+    flex-direction: row;
+    padding-left: 0;
+    padding-top: .1em;
+}
+.join{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    padding-right: 0;
+}
+#join-btn{
+    display: flex;
+   width: 8rem;
+   height: 1.5rem;
+   padding: .7rem 1em 2.3em 1em;
+   font-size: .6em;
+}
+.nav-title{
+    padding-top: .5rem;
+}
+.nav-title h1{
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.nav-title p{
+    justify-content: center;
+    margin-top: .1rem;
+    font-size: .7rem;
+}
+.btn {
+    gap: 1rem;
+    margin-top: 1rem ;
+}
+.btn button{
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-size: .7rem;    
+}
+
+/* The first floating section */
+
+.floats-container{
+    width: 80%;
+    display: flex;
+    margin-left: 5em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: -2em;
+}
+ .floats ion-icon {
+    font-size: 25px;
+    color: rgb(35, 166, 240); 
+}
+ .float3 ion-icon {
+    color: #ffffff;
+}
+.float1, .float2 {
+    width: 10rem;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.float3{
+    width: 10rem;
+    padding: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: rgb(35, 166, 240);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.floats p{
+    font-size: 15px;
+    padding: 10px;
+    opacity: .5;
+    /* text-align: center; */
+}
+.floats span{
+    width: 10rem;
+}
+
+
+/* The second floating section */
+.Second-floats{
+    height: 10vh;
+    gap: 1rem;
+    padding: 10px;
+    margin-top: 1rem;   
+}
+.float-1, .float-2, .float-3{
+    width: 10rem;
+    padding: 15px;
+}
+
+/* The Industry section */
+.industry{
+    height: 17vh;
+    margin-top: 5rem;   
+}
+.industry-info h1{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.industry-info p{
+    font-size: .8rem;
+    padding-top: .5rem;
+}
+
+/* RATING SECTION */
+.rating{
+    height: 5rem;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1em;
+}
+.rating img{
+    width: 5rem;
+}
+.rating p{
+    font-size: 11px;
+    color: rgb(124, 123, 123);
+}
+.user1, .user2, .user3{
+    width: 13%;
+    padding: 1rem;
+}
+.stars svg{
+    width: 1rem;
+}
+.rating{
+    height: 20rem;
+    gap: 1rem;
+    margin-top: 3em;
+}
+
+/* PARTNERS */
+.partners{
+    margin-top: 2em;
+    margin-bottom: 1rem;
+}
+.p-logos img{
+    width: 3rem;
+    padding: .9rem;
+}
+
+/* SUBSCRIPTION */
+.subscription{
+    margin-bottom: 10px;
+}
+.Newsletter{
+    width: 55%;
+    padding: 1rem;
+    gap: 2rem;
+}
+.Newsletter h3{
+    font-size: 13px;
+}
+.Newsletter button{
+    width: 15em;
+    font-size: .7rem;
+    border: 1px solid white;
+    gap: 6px;
+}
+   
+#email{
+    width:5em;  
+    background-color: #053547; 
+}
+#email input{
+    padding: 7px 0px 7px 0;
+    margin-left: -25px;
+}
+#submit{
+    width: 5em;
+    background-color: rgb(35, 166, 240);
+    border-radius: 2px;
+    border: none;
+    padding: 4px 0 4px 0px;
+    font-size: 10px;
+    margin-right: 0px;
+}
+
+/* PRICING */
+
+.Pricing{
+    height: 17vh;
+    margin-top: 2rem;   
+}
+.pricing-info h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.pricing-info p{
+    font-size: .9rem;
+}
+
+
+/* OFFERS */
+.price-offers{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+.offer1 h3, .offer2 h3, .offer3 h3{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: .8em;
+}
+.offer1 p, .offer2 p, .offer3 p{
+    font-size: 10px; 
+}
+.currency p{
+    font-size: 12px;
+}
+.offer1, .offer2, .offer3{
+    width: 19%;
+}
+#currency span{
+    font-size: 10px;
+}
+
+/* BRANCH */
+.branches{
+    height: 90vh;
+}
+.branch-map{
+    width: 50%;
+    height: 30vh;
+    gap: 10em;
+}
+#branch-info{
+    width: 50%;
+}
+#branch-info h1{
+    width: 50vh;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: .4em;
+}
+#branch-info p{
+    font-size: 11px;
+}
+#branch-img{
+    width: 50%;
+}
+#branch-img img{
+    width: 30vw;
+}
+
+/* CONTACT */
+.contact-form{
+    width: 50%;
+}
+#form{
+    width: 50%;
+    padding: 1em ;
+    font-size: .7em;
+}
+#form h3{
+    padding: 1em;
+}
+#form input{
+    width: 25vh;
+    padding: .5em;
+    margin: .6em 0 0.6em 0;
+}
+#form button{
+    width: 28vh;
+    padding: .6em;
+    margin: .6em 0 0.6em 0;
+    border-radius: 3px;
+}
+.contact-form img{
+    width: 20vw;
+}
+
+/* CONSULTING-AGENCY */
+.agency{
+    width: 100%;
+    height: 27vh;
+    gap: 6em;
+}
+#agency-info{
+    padding: 4em;
+}
+#agency-info h1{
+    font-size: 15px;
+}
+#agency-info p{
+    font-size: 12px;
+}
+#agency-btn button{
+    width: 17vh;
+    padding: .6em;
+}
+
+/* FOOTER */
+.footer{
+    padding: 1em 0 1em 0; 
+}
+.footer-container{
+    gap: 2em;
+}
+}
+
+
+/* MEDIA QUERIES
+    MEDIA QUERIES
+        MEDIA QUERIES
+            MEDIA QUERIES
+                MEDIA QUERIES */
+
+@media (max-width: 768px) {
+*{
+    overflow-x: hidden;
+}
+.nav{
+    height: 30vh;
+}
+.nav-items{
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+#logo{
+    font-size: 15px;
+    margin-top: -.1em;
+}
+.links{
+    gap: 5px;
+    font-size: 12px;
+    /* flex-direction: row; */
+    padding-top: 5px;
+}
+#join-btn{
+    display: flex;
+    width: 5rem;
+    height: 1.5rem;
+    padding: .3rem 1em 2.5em 1em;
+    font-size: 8px;
+}
+.nav-title{
+    padding-top: 0px;
+}
+.nav-title h1{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.nav-title p{
+    justify-content: center;
+    margin-top: 2px;
+    font-size: .5rem;
+}
+.btn {
+    gap: 1rem;
+    margin-top: 1rem ;
+}
+
+/* The first floating section */
+
+.floats-container{
+    width: 100%;
+    margin-left: 0em;
+    
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0em;
+}
+    .floats ion-icon {
+    font-size: 20px;
+}
+.float1, .float2, .float3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    padding: 8px;
+    font-size: 13px;
+}
+.float1:hover, .float2:hover, .float3:hover{
+    width: 25rem;
+    padding: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(35, 166, 240);
+}
+.floats p{
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* The second floating section */
+.Second-floats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 33vh;
+    gap: 2px;
+    padding: 1px;
+    margin-top: 4px;   
+}
+.float-1, .float-2, .float-3{
+    width: 30rem;
+    padding: 0px;
+}
+
+/* The Industry section */
+.industry{
+    height: 17vh;
+    margin-top: 0px;   
+}
+.industry-info h1{
+    font-size: 1.3rem;
+}
+.industry-info p{
+    font-size: 9px;
+    padding-top: 0px;
+}
+
+/* RATING SECTION */
+.rating{
+    height: 10rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 10px;
+}
+.rating img{
+    width: 5rem;
+}
+.rating p{
+    font-size: 11px;
+    color: rgb(124, 123, 123);
+}
+.user1, .user2, .user3{
+    width: 100%;
+    padding: 3px;
+}
+.stars svg{
+    width: 1rem;
+}
+.rating{
+    height: 40rem;
+    gap: 0px;
+    margin-top: 2px;
+}
+
+/* PARTNERS */
+.partners{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.p-logos img{
+    width: 3rem;
+    padding: .5rem;
+}
+
+/* SUBSCRIPTION */
+.subscription{
+    margin-bottom: 10px;
+}
+.Newsletter{
+    width: 100%;
+    padding: 1rem;
+    gap: 5px;
+}
+.Newsletter h3{
+    font-size: 13px;
+}
+.Newsletter button{
+    width: 10em;
+    font-size: 6px;
+    border: 1px solid white;
+    gap: 5px;
+}
+    
+#email{
+    width:10em;  
+    background-color: #053547; 
+}
+#email input{
+    padding: 7px 0px 7px 0;
+    margin-left: -25px;
+}
+#submit{
+    width: 5em;
+    background-color: rgb(35, 166, 240);
+    border-radius: 2px;
+    border: none;
+    padding: 4px 0 4px 0px;
+    font-size: 10px;
+    margin-right: 0px;
+}
+
+/* PRICING */
+
+.Pricing{
+    height: 19vh;
+    margin-top: 4px;   
+}
+.pricing-info h1{
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+.pricing-info p{
+    font-size: .7rem;
+}
+
+
+/* OFFERS */
+.price-offers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.offer1 h3, .offer2 h3, .offer3 h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.offer1 p, .offer2 p, .offer3 p{
+    font-size: 9px; 
+}
+.currency p{
+    font-size: 10px;
+}
+.offer1, .offer2, .offer3{
+    width: 100%;
+    gap: 2px;
+    height: 35vh;
+    margin-left: -20px;
+}
+#currency span{
+    font-size: 10px;
+}
+
+/* BRANCH */
+.branches{
+    height: 60vh;
+}
+.branch-map{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    gap: 1rem;
+    margin-top: -100px;
+}
+#branch-info{
+    width: 100%;
+}
+#branch-info h1{
+    width: 40vh;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+#branch-info p{
+    font-size: 9px;
+}
+#branch-img{
+    width: 100%;
+}
+#branch-img img{
+    width: 70vw;
+}
+
+/* CONTACT */
+.contact-form{
+    width: 100%;
+}
+#form{
+    width: 70%;
+    padding: 1em ;
+    font-size: .7em;
+}
+#form h3{
+    padding: 1em;
+}
+#form input{
+    width: 50vw;
+    padding: .5em;
+    margin: 1em 0 0.6em 0;
+}
+#form button{
+    width: 24vh;
+    padding: .6em;
+    margin: .6em 0 0.6em 0;
+    border-radius: 3px;
+}
+.contact-form img{
+    width: 45vw;
+    margin-top: 0px ;
+}
+
+/* CONSULTING-AGENCY */
+.agency{
+    width: 100%;
+    height: 27vh;
+    gap: 6em;
+}
+#agency-info{
+    padding: 4em;
+}
+#agency-info h1{
+    font-size: 15px;
+}
+#agency-info p{
+    font-size: 12px;
+}
+#agency-btn button{
+    width: 17vh;
+    padding: .6em;
+}
+
+/* FOOTER */
+.footer{
+    padding: 1em 0 1em 0; 
+}
+.footer-container{
+    gap: 2em;
+}
 }
