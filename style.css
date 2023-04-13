@@ -1,48 +1,52 @@
 *{
-    padding: 0;
+    padding: 0 ;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    height: fit-content;
+    
+    
+}
+body{
+    overflow-x: hidden;
 }
 .nav{
     width: 100%;
     height: 110vh;
     background-image: url("./images/hero-cover.png");
-    opacity: .1 rgb(164, 209, 138);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: none;
+    
 }
-.list{
+.nav-items{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px;
 }
-.list ul{
+.links{
     display: flex;
-    gap: 3rem;
-    list-style: none;
+    justify-content: flex-start; 
+    gap: 30px;
+    flex-direction: row;
+}
+.join{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.links a, .join a{
+    text-decoration: none;
     color: #ffffff;
-    padding-top: 30px;
-   
 }
-#logo{
-    font-weight: 600;
-    font-size: 25px;
-    letter-spacing: 2px;
-    margin-left: -20rem;
+#join-btn{
+   width: 11rem;
+   background-color: #1D99CA;
+   border: none;
+   padding: 10px;
+   border-radius: 10px;
 }
-#list-btn{
-    width: 12rem;
-    background-color: rgb(29, 153, 202);
-    border-radius: 5px;
-    padding: 10px;
-    border: none;
-    color: #ffffff;
-    display: flex;
-    justify-content: flex-end;
-    float: left;
-}
+ion-icon {
+    color: white;
+  }
 .nav-title{
     display: flex;
     justify-content: center;
@@ -71,7 +75,7 @@
     gap: 2rem;
     margin-top: 30px ;
 }
-button{
+.btn button{
     padding: 15px 50px;
     border-radius: 40px;
     font-size: 15px;
@@ -88,40 +92,36 @@ button{
     opacity: .8;
     border: 1px solid #ffffff;
 }
+
+.box{
+    background-color: aliceblue;
+
+}
+
+/* The first floating section */
 .floats{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-direction: row;
     gap: 4rem;
-    padding: 20px;
-    margin-top: -125px;  
+    padding-top: -80px;
     cursor: pointer;
+} 
+ .floats ion-icon {
+    font-size: 50px;
+    color: #1D99CA; 
 }
-.float1{
-    width: 16rem;
-    padding: 30px;
-    font-size: 25px;
-    border: none;
-    background-color: white;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-.float2{
-    width: 16rem;
-    padding: 30px;
-    font-size: 25px;
-    border: none;
-    background-color: white;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-.float3{
-    width: 16rem;
-    padding: 30px;
-    font-size: 23px;
-    border:none ;
-    background-color: #1D99CA ;
+ .float3 ion-icon {
     color: #ffffff;
+}
+.float1, .float2, .float3{
+    width: 16rem;
+    padding: 30px;
+    font-size: 25px;
+    border: none;
+    background-color: white;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
@@ -129,7 +129,153 @@ button{
     font-size: 15px;
     padding: 10px;
     opacity: .5;
+    /* text-align: center; */
 }
 .floats span{
     width: 10rem;
+}
+
+
+/* The second floating section */
+.Second-floats{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 20px;
+    margin-top: 10rem;   
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.float-1, .float-2, .float-3{
+    width: 16rem;
+    padding: 30px;
+    font-size: 15px;
+    border: none;
+}
+.Second-floats h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.Second-floats p{
+    font-size: 12px;
+    line-height: 14px;
+    opacity: .6;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center; 
+}
+.Second-floats span{
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rating{
+    margin-top: 400px;
+}
+
+/* The Industry section */
+.industry{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;   
+    cursor: pointer;
+}
+.industry-info {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.industry-info h1{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+.industry-info p{
+    opacity: .6;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* RATING SECTION */
+.rating{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5em;
+}
+.rating img{
+    width: 8rem;
+}
+.rating p{
+    font-size: 12px;
+    color: rgb(124, 123, 123);
+    padding: .8rem;
+}
+.user1, .user2, .user3{
+    width: 15%;
+    border: 1px solid rgb(205, 205, 205);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.stars svg{
+    width: 1rem;
+}
+
+/* PARTNERS */
+.partners{
+    width: 100%;
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 6rem;
+}
+.p-logos img{
+    width: 6rem;
+    padding: 1.8rem;
+}
+
+/* SUBSCRIPTION */
+.subscription{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.Newsletter{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 2rem;
+    gap: 2rem;
+    /* margin-left: 16rem; */
+}
+.Newsletter button{
+    padding: 1rem;
+    width: 20rem;
+    font-size: 1rem;
+}
+.Newsletter input{
+    padding: 5px;
+    margin-right: 1rem;
 }
