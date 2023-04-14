@@ -970,7 +970,7 @@ ion-icon {
             MEDIA QUERIES
                 MEDIA QUERIES */
 
-@media (max-width: 768px) {
+@media (max-width: 412px) {
 *{
     overflow-x: hidden;
 }
@@ -1235,6 +1235,9 @@ ion-icon {
 }
 
 /* CONTACT */
+.contact{
+    height: 30vh;
+}
 .contact-form{
     width: 100%;
     height: 40vh;
@@ -1265,12 +1268,12 @@ ion-icon {
 
 /* CONSULTING-AGENCY */
 .agency{
-    width: 100%;
+    width: 80%;
     height: 27vh;
-    gap: 6em;
+    gap: 0em;
 }
 #agency-info{
-    padding: 4em;
+    padding: 2em;
 }
 #agency-info h1{
     font-size: 15px;
@@ -1279,8 +1282,9 @@ ion-icon {
     font-size: 12px;
 }
 #agency-btn button{
-    width: 17vh;
+    width: 15vh;
     padding: .6em;
+    margin-right: 50px;
 }
 
 /* FOOTER */
