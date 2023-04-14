@@ -59,14 +59,14 @@ ion-icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 7rem;
+    padding-top: 3rem;
 }
 .nav-title h1{
     display: flex;
     justify-content: center;
     font-size: 4rem;
     color: #ffffff;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .nav-title p{
     display: flex;
@@ -105,6 +105,49 @@ ion-icon {
 .box{
     background-color: #ffffff;
 
+}
+
+
+/* The first floating section */
+
+.floats-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0 24m 0 4em;
+}
+ .floats ion-icon {
+    font-size: 3em;
+    color: rgb(35, 166, 240); 
+}
+.float1  ion-icon:hover,   .float2 ion-icon:hover,   .float3 ion-icon:hover {
+    color: #ffffff;
+}
+.float1, .float2, .float3{
+    margin-top: -4em;
+    width: 15rem;
+    padding: 30px;
+    font-size: 17px;
+    border: none;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.float1:hover, .float2:hover, .float3:hover{
+    font-size: 18px;
+    color: #ffffff;
+    background-color: rgb(35, 166, 240);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.floats p{
+    font-size: 14px;
+    padding: 10px;
+    opacity: .5;
+}
+.floats span{
+    width: 10rem;
 }
 
 
@@ -1194,6 +1237,7 @@ ion-icon {
 /* CONTACT */
 .contact-form{
     width: 100%;
+    height: 40vh;
 }
 #form{
     width: 70%;
