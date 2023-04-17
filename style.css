@@ -121,9 +121,10 @@ ion-icon {
     font-size: 3em;
     color: rgb(35, 166, 240); 
 }
-.float1  ion-icon:hover,   .float2 ion-icon:hover,   .float3 ion-icon:hover {
-    color: #ffffff;
+.float1:hover ion-icon, .float2:hover ion-icon, .float3:hover ion-icon {
+    color: #ffffff; 
 }
+
 .float1, .float2, .float3{
     margin-top: -4em;
     width: 15rem;
@@ -134,6 +135,7 @@ ion-icon {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
+
 .float1:hover, .float2:hover, .float3:hover{
     font-size: 18px;
     color: #ffffff;
@@ -1186,6 +1188,10 @@ ion-icon {
     font-weight: 600;
     margin-bottom: 4px;
 }
+.offer-cut{
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
 .offer1 p, .offer2 p, .offer3 p{
     font-size: 9px; 
 }
@@ -1236,30 +1242,35 @@ ion-icon {
 
 /* CONTACT */
 .contact{
-    height: 30vh;
+    height: 55vh;
+    position: absolute;
+    gap: 10px; 
 }
 .contact-form{
     width: 100%;
-    height: 40vh;
+    height: 35vh;
 }
 #form{
     width: 70%;
-    padding: 1em ;
+    padding: .1em ;
     font-size: .7em;
 }
 #form h3{
     padding: 1em;
 }
-#form input{
+#form input,#form select,#form option{
     width: 50vw;
-    padding: .5em;
-    margin: 1em 0 0.6em 0;
+    padding: .3em;
+    margin: 1em 0 0.6em .3em;
 }
 #form button{
     width: 24vh;
     padding: .6em;
     margin: .6em 0 0.6em 0;
     border-radius: 3px;
+}
+#form option{
+    font-size: 10px;
 }
 .contact-form img{
     width: 45vw;
@@ -1268,12 +1279,13 @@ ion-icon {
 
 /* CONSULTING-AGENCY */
 .agency{
-    width: 80%;
-    height: 27vh;
-    gap: 0em;
+    position: relative;
+    width: 90%;
+    height: 20vh;
+    margin-top: -1em;
 }
 #agency-info{
-    padding: 2em;
+    padding: .1em;
 }
 #agency-info h1{
     font-size: 15px;
@@ -1283,15 +1295,22 @@ ion-icon {
 }
 #agency-btn button{
     width: 15vh;
-    padding: .6em;
-    margin-right: 50px;
+    padding: .6em .8em .6em 0;
+    margin-right: 10em;
 }
 
 /* FOOTER */
 .footer{
+    
     padding: 1em 0 1em 0; 
 }
 .footer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 2em;
 }
+
+
 }
